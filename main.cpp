@@ -34,11 +34,11 @@ int main(int argc, char *argv[]) {
   std::cout << "file = " << file << std::endl;
 
   std::ofstream myfile;
-  myfile.open ("er2.data");
+  myfile.open (file.c_str());
   myfile << "Vertex" << "\t" << "Degree\n";
   boost::minstd_rand gen;
   // Create graph with 100 nodes and edges with probability 0.05
-  Graph g(ERGen(gen, n, p), ERGen(), 100);
+  Graph g(ERGen(gen, n, p), ERGen(), n);
   BGL_FORALL_VERTICES_T(v, g, Graph) {
     myfile << v << "\t" << boost::out_degree(v, g) << "\n";
   }
