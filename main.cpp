@@ -10,7 +10,7 @@ typedef boost::erdos_renyi_iterator<boost::minstd_rand, Graph> ERGen;
 
 int main(int argc, char *argv[]) {
 
-  std::string file = "er2.data";
+  std::string file = "er2.gr";
   int scale = 10;
   double p = (double)0.25;
   for (int i=0; i < argc; ++i) {

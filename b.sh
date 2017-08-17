@@ -1,1 +1,1 @@
-g++ -std=c++11 -I/Users/kane972/development/boost/install/include main.cpp
+CC -std=c++11 -I/home/users/p02119/development/install/boost/include main.cpp
